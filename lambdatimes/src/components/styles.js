@@ -18,6 +18,7 @@ export const HeaderContainer = styled.div`
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 1px;
+  }
 `;
 export const Date = styled.span`
   margin-left: 25px;
@@ -90,7 +91,7 @@ export const TopCenterContainer = styled.div`
 export const TopCenterSpan = styled.span`
   cursor: pointer;
   margin-right: 5%;
-  hover & {
+  &:hover {
     text-decoration: underline;
   }
   cursor: pointer;

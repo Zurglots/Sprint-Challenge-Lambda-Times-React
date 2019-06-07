@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import Tabs from "./Tabs";
 import Cards from "./Cards";
 
-// Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from "../../data";
 
 export default class Content extends Component {
@@ -30,12 +29,16 @@ export default class Content extends Component {
   };
 
   filterCards = () => {
-    const filteredCards = this.state.cards.filter(card => {
-      return this.state.selected === "all"
-        ? "all"
-        : this.state.selected === card.tab;
-    });
-    return filteredCards;
+    return this.state.selected === "all"
+      ? this.state.cards
+      : this.state.cards.filter(card => card.tab === this.state.selected);
+
+    // const filteredCards = this.state.cards.filter(card => {
+    //   return this.state.selected === "all"
+    //     ? "all"
+    //     : this.state.selected === card.tab;
+    // });
+    // return filteredCards;
   };
 
   render() {

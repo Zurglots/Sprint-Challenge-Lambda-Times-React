@@ -5,15 +5,14 @@ import PropTypes from "prop-types";
 const Cards = props => {
   return (
     <div className="cards-container">
-      {props.cards.map(card => (
-        <Card cards={card} />
+      {props.cards.map((card, i) => (
+        <Card cards={card} key={i} />
       ))}
     </div>
   );
 };
 
 Cards.propTypes = {
-  cards: PropTypes.arrayOf(PropTypes.object),
-  card: PropTypes.string
+  cards: PropTypes.arrayOf(PropTypes.object)
 };
 export default Cards;
