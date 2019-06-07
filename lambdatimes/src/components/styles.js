@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-// HEADER
+// HEADER \\
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -37,9 +37,9 @@ export const Temp = styled.span`
   flex: 1;
 `;
 
-// /HEADER
+// /HEADER \\
 
-//TOPBAR
+// TOPBAR \\
 
 export const TopBarWrap = styled.div`
   width: 100%;
@@ -113,8 +113,7 @@ export const TopRightSpan = styled.span`
   cursor: pointer;
 `;
 
-// export const  = styled.span``
+// /TOPBAR \\
 
-// export const  = styled.span``
-
-// export const  = styled.span``
+// CopyPasta \\
+// export const  = styled.span`` \\

@@ -6,11 +6,9 @@ import {
   TopLeftSpan,
   TopCenterContainer,
   TopCenterSpan,
-  TopContainerRight
+  TopContainerRight,
+  TopRightSpan
 } from "./styles";
-
-// Refactor this component to use styled components and not classNames.
-// You can find the corresponding CSS in the CSS/index.css file
 
 const TopBar = () => {
   return (
@@ -28,7 +26,7 @@ const TopBar = () => {
           <TopCenterSpan>ANNOUNCEMENTS</TopCenterSpan>
         </TopCenterContainer>
         <TopContainerRight>
-          <span>LOG IN</span>
+          <TopRightSpan>LOG IN</TopRightSpan>
         </TopContainerRight>
       </TopBarContainer>
     </TopBarWrap>
