@@ -28,14 +28,18 @@ export default class Content extends Component {
     this.setState({
       selected: tab
     });
-    console.log("fired");
+    console.log("ran");
     // this function should take in the tab and update the state with the new tab.
   };
 
   filterCards = () => {
     const filteredCards = this.state.cards.filter(card => {
-      this.state.selected === "all" ? true : card.tab === this.state.selected;
+      return this.state.selected === "all"
+        ? "all"
+        : this.state.selected === card.tab;
     });
+
+    // DO I NEED TO SET STATE?
 
     /* Right now this function only returns the cards on state.
       We're going to make this function more dynamic
